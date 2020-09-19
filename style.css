@@ -1,0 +1,246 @@
+* {
+	margin: 0;
+  padding: 0;
+  font-size: 100%;
+	/* border: 1px solid #000; */
+}
+
+body {
+	background-image: url(assets/img/background1.png);
+	background-size: 1600px 744px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.header, .main, .footer {
+	width: 1600px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 95px;
+}
+
+.hidden {
+	display: none;
+}
+
+.navBar {
+	padding-top: 24px;
+	height: 50px;
+}
+
+.navList {
+  display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style-type: none;
+	height: 50px;
+	line-height: 50px;
+	width: 596px;
+	margin: 0 auto;
+}
+
+.navLink {
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	color: #fff;
+	font: 15px Roboto, sans-serif;
+	letter-spacing: -.4px;
+}
+	
+
+.logo {
+	margin-top: 1px;
+	height: 45px;
+	width: 45px;
+}
+
+.yourLife {
+	width: 1600px;
+	height: 649px;
+}
+
+h1 {
+	padding-top: 134px;
+	text-transform: uppercase;
+	font: 900 64px Roboto, sans-serif;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 4.5px;
+}
+
+.yourLifeText {
+	margin-top: 21px;
+	font: 18px Roboto, sans-serif;
+	line-height: 25px;
+	text-align: center;
+	/* letter-spacing: .8px; */
+	color: #fff;
+}
+
+.headButton {
+	height: 46px;
+	width: 184px;
+	margin: 29px auto;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: bold 14px Roboto, sans-serif;
+	color: #fff;
+	background-color: #0099cc;
+}
+
+.headButton>a {
+	height: 46px;
+	width: 184px;
+	line-height: 46px;
+	text-decoration: none;
+	color: #fff;
+  display: flex;
+	justify-content: center;
+}
+
+.socNetIcon {
+	width: 170px;
+	margin: 0 auto;
+	margin-top: 183px;
+  display: flex;
+	flex-direction: row;	
+	justify-content: space-between;
+	list-style: none;
+}
+
+.icon {
+	height: 20px;
+	width: 20px;
+}
+
+.rappresent {
+	height: 842px;
+	display: flex;
+}
+
+.rappresentCard{
+	width: 800px;
+	height: 842px;
+}
+
+h2 {
+	width: 368px;
+	margin-top: 295px;
+	margin-left: 268px;
+	text-transform: uppercase;
+	font: bold 24px Roboto, sans-serif;
+	text-align: left;
+	color: #373737;
+	letter-spacing: 1px;
+}
+
+.rappresentText {
+	width: 407px;
+	margin-top: 20px;
+	margin-left: 268px;
+	font: 14px Roboto, sans-serif;
+	line-height: 145%;
+}
+
+.rappresentButton {
+	height: 46px;
+	width: 184px;
+	margin-top: 29px;
+	margin-left: 268px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: bold 14px Roboto, sans-serif;
+	color: #fff;
+	background-color: #0099cc;	
+}
+
+.rappresentButton>a {
+	height: 46px;
+	width: 184px;
+	line-height: 46px;
+	text-decoration: none;
+	color: #fff;
+  display: flex;
+	justify-content: center;
+}
+
+.rappresentImage {
+	width: 407px;
+	height: 582px;
+	margin-top: 120px;
+	margin-left: 123px;
+}
+
+.community {
+	height: 504px;
+	display: flex;
+	flex-direction: row;
+	background-color: #f5f6f7;
+	overflow: hidden;
+}
+
+.communityCard1 {
+	height: 504px;
+	width: 576px;
+	margin-left: 130px;
+}
+
+.communityIcon {
+	height: 45px;
+	width: 45px;
+	margin-top: 155px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h3 {
+	margin-top: 20px;
+	margin-left: 0;
+	text-transform: uppercase;
+	font: 500 16px Roboto, sans-serif;
+	line-height: 20px;
+	text-align: center;
+	color: #373737;
+	letter-spacing: 2.4px;
+}
+
+.communityText {
+	margin: 0 140px;
+	margin-top: 11px;
+	font: 14px Roboto, sans-serif;
+	line-height: 145%;
+	text-align: center;
+}
+
+.communityCard2 {
+	height: 504px;
+	width: 894px;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.communityCounter {
+	width: 79px;
+	height: 20px;
+	margin-top: 80px;
+	margin-left: 546px;
+	font: 500 18px Roboto, sans-serif;
+}
+
+.communityCounterList {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.communityImageRow {
+	width: 1281px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
