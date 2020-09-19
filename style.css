@@ -1,3 +1,25 @@
+/* fonts */
+@font-face {
+	font-family: "Roboto";
+	src: url("/assets/fonts/Roboto-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("/assets/fonts/Roboto-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("/assets/fonts/Roboto-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+
 * {
 	margin: 0;
   padding: 0;
@@ -65,7 +87,7 @@ body {
 h1 {
 	padding-top: 134px;
 	text-transform: uppercase;
-	font: 900 64px Roboto, sans-serif;
+	font: bold 64px Roboto, sans-serif;
 	text-align: center;
 	color: #fff;
 	letter-spacing: 4.5px;
