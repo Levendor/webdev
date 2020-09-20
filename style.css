@@ -24,15 +24,25 @@
 	margin: 0;
   padding: 0;
   font-size: 100%;
-	/* border: 1px solid #000; */
 }
 
-body {
+/* body {
 	background-image: url(assets/img/background1.png);
 	background-size: 1600px 744px;
 	background-repeat: no-repeat;
+	margin: 0 auto;
 	background-position: center top;
-}
+} */
+
+/* .background {
+	width: 1600px;
+	height: 744px;
+	background-image: url(assets/img/background1.png);
+	background-size: 1600px 744px;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	z-index: -9999;
+} */
 
 .header, .main, .footer {
 	width: 1600px;
@@ -40,7 +50,11 @@ body {
 }
 
 .header {
-	height: 95px;
+	height: 744px;
+	background-image: url(assets/img/background1.png);
+	background-size: 1600px 744px;
+	background-repeat: no-repeat;
+	overflow: visible;
 }
 
 .hidden {
@@ -48,19 +62,17 @@ body {
 }
 
 .navBar {
-	padding-top: 24px;
-	height: 50px;
+	height: 95px;
 }
 
 .navList {
+	padding-top: 23px;
   display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	list-style-type: none;
 	height: 50px;
 	line-height: 50px;
-	width: 596px;
-	margin: 0 auto;
 }
 
 .navLink {
@@ -71,24 +83,44 @@ body {
 	font: 15px Roboto, sans-serif;
 	letter-spacing: -.4px;
 }
-	
+
+.navList>li+li {
+	margin-left: 85px;
+}
+
+.navList>li:last-of-type {
+	margin-right: 14px;
+}
+
+.navList>li>a {
+	padding-bottom: 1px;
+}
+
+.navLink:hover {
+	cursor: pointer;
+	border-bottom: 1px solid #fff;
+}	
 
 .logo {
-	margin-top: 1px;
 	height: 45px;
 	width: 45px;
+	margin: 0 15px;
+	margin-top: 2px;
 }
 
 .yourLife {
 	width: 1600px;
 	height: 649px;
+	background: none
 }
 
 h1 {
-	padding-top: 134px;
+	padding-top: 133px;
 	text-transform: uppercase;
 	font: bold 64px Roboto, sans-serif;
 	text-align: center;
+	position: relative;
+	left: 2px;
 	color: #fff;
 	letter-spacing: 4.5px;
 }
@@ -102,25 +134,30 @@ h1 {
 	color: #fff;
 }
 
+.headForm {
+	width: 184px;
+	margin: 0 auto;
+}
+
 .headButton {
 	height: 46px;
 	width: 184px;
-	margin: 29px auto;
+	margin-top: 29px;
+	justify-content: center;
 	text-decoration: none;
 	text-transform: uppercase;
 	font: bold 14px Roboto, sans-serif;
 	color: #fff;
-	background-color: #0099cc;
+	background-color: #00afdb;
+	border: none;
+	border-radius: 0;
+	outline: none;
 }
 
-.headButton>a {
-	height: 46px;
-	width: 184px;
-	line-height: 46px;
-	text-decoration: none;
-	color: #fff;
-  display: flex;
-	justify-content: center;
+.headButton:hover {
+	cursor: pointer;
+	background-color: #009cc2;
+	outline: none;
 }
 
 .socNetIcon {
@@ -139,21 +176,20 @@ h1 {
 }
 
 .rappresent {
-	height: 842px;
 	display: flex;
 }
 
 .rappresentCard{
 	width: 800px;
-	height: 842px;
 }
 
-h2 {
+.rappresentCard>h2 {
 	width: 368px;
 	margin-top: 295px;
-	margin-left: 268px;
+	margin-left: 269px;
 	text-transform: uppercase;
 	font: bold 24px Roboto, sans-serif;
+	line-height: 28px;
 	text-align: left;
 	color: #373737;
 	letter-spacing: 1px;
@@ -161,43 +197,46 @@ h2 {
 
 .rappresentText {
 	width: 407px;
-	margin-top: 20px;
-	margin-left: 268px;
+	margin-top: 22px;
+	margin-left: 269px;
 	font: 14px Roboto, sans-serif;
-	line-height: 145%;
+	color: #4E4E4E;
+	line-height: 20px;
 }
 
 .rappresentButton {
 	height: 46px;
 	width: 184px;
 	margin-top: 29px;
-	margin-left: 268px;
+	margin-left: 269px;
+	margin-bottom: 314px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font: bold 14px Roboto, sans-serif;
 	color: #fff;
-	background-color: #0099cc;	
+	background-color: #00afdb;
+	border: none;
+	border-radius: 0;
+	outline: none;
 }
 
-.rappresentButton>a {
-	height: 46px;
-	width: 184px;
-	line-height: 46px;
-	text-decoration: none;
-	color: #fff;
-  display: flex;
-	justify-content: center;
+.rappresentButton:hover {
+	cursor: pointer;
+	background-color: #009cc2;
+}
+
+.implementButton:focus{
+	outline: none;
 }
 
 .rappresentImage {
 	width: 407px;
 	height: 582px;
 	margin-top: 120px;
-	margin-left: 123px;
+	margin-left: 124px;
 }
 
 .community {
-	height: 504px;
 	display: flex;
 	flex-direction: row;
 	background-color: #f5f6f7;
@@ -225,6 +264,8 @@ h3 {
 	font: 500 16px Roboto, sans-serif;
 	line-height: 20px;
 	text-align: center;
+	position: relative;
+	left: 1px;
 	color: #373737;
 	letter-spacing: 2.4px;
 }
@@ -245,10 +286,10 @@ h3 {
 }
 
 .communityCounter {
-	width: 79px;
+	width: 83px;
 	height: 20px;
 	margin-top: 80px;
-	margin-left: 546px;
+	margin-left: 542px;
 	font: 500 18px Roboto, sans-serif;
 }
 
@@ -259,10 +300,264 @@ h3 {
 	list-style: none;
 }
 
+.communityCounterList>li>a:hover {
+	opacity: .5;
+}
+
 .communityImageRow {
 	width: 1281px;
 	margin-top: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+.implement {
+	display: flex;
+	flex-direction: row;
+}
+
+.implementImage{
+	margin-top: 120px;
+	margin-left: 269px;
+	margin-bottom: 140px;
+}
+
+.implementCard {
+	margin-top: 319px;
+	margin-left: 139px;
+}
+
+.implementCard>h2 {
+	text-transform: uppercase;
+	font: bold 24px Roboto, sans-serif;
+	line-height: 28px;
+	text-align: left;
+	color: #373737;
+	letter-spacing: 1px;
+}
+
+.implementText {
+	width: 407px;
+	margin-top: 21px;
+	font: 14px Roboto, sans-serif;
+	line-height: 20px;
+}
+
+.implementButton {
+	height: 46px;
+	width: 180px;
+	margin-top: 29px;
+	line-height: 46px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: bold 14px Roboto, sans-serif;
+	color: #fff;
+	background-color: #00afdb;	
+	border: none;
+	border-radius: 0;
+	outline: none;
+}
+
+.implementButton:hover {
+	cursor: pointer;
+	background-color: #009cc2;
+}
+
+.implementButton:focus{
+	outline: none;
+}
+
+.signUp {
+	background-size: cover;
+	background-image: url(/assets/img/signup2.png);
+}
+
+.signUp>h2 {
+	padding-top: 199px;
+	text-transform: uppercase;
+	font: bold 24px Roboto, sans-serif;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.signUpForm {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	padding-bottom: 220px;
+}
+
+.signUpEmail {
+	height: 46px;
+	width: 340px;
+	border: none;
+	border-radius: 0;
+	font: 14px Roboto, sans-serif;
+	text-indent: 24px;
+	background-color: #fff;
+}
+
+.signUpEmail:focus {
+	outline: none;
+}
+
+.signUpCheck {
+	height: 46px;
+	width: 66px;
+	border: none;
+	border-radius: 0;
+	background-color: #00afdb;
+	outline: none;
+}
+
+.signUpCheck:hover {
+	cursor: pointer;
+	background-color: #009cc2;
+}
+
+.signUpCheck:focus {
+	outline: none;
+}
+
+.signUpCheck>img {
+	vertical-align: middle;
+}
+
+.download {
+	background-color: #f5f6f7;
+}
+
+.download>h2 {
+	padding-top: 120px;
+	text-transform: uppercase;
+	font: bold 24px Roboto, sans-serif;
+	text-align: center;
+	line-height: 28px;
+	color: #373737;
+	letter-spacing: 1px;
+}
+
+.downloadText {
+	margin-top: 21px;
+	font: 14px Roboto, sans-serif;
+	line-height: 20px;
+	text-align: center;
+}
+
+.downloadForm {
+	margin: 30px auto 0 auto;
+	width: 402px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 179px;
+}
+
+.apple,
+.android {
+	height: 46px;
+	width: 186px;
+	border: none;
+	border-radius: 0;
+	display: flex;
+	flex-direction: row;
+	background-color: #00afdb;
+}
+
+.apple:hover,
+.android:hover {
+	cursor: pointer;
+	background-color: #009cc2;
+}
+
+.apple:focus,
+.android:focus {
+	outline: none;
+}
+
+.appleText,
+.androidText {
+	height: 46px;
+	width: 127px;
+	line-height: 46px;
+	text-transform: uppercase;
+	font: bold 14px Roboto, sans-serif;
+	color: #fff;
+	border: none;
+	border-radius: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.appleCheck,
+.androidCheck {
+	height: 46px;
+	width: 66px;
+	border: none;
+	border-radius: 0;
+	background-color: #009cc2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	background-color: #000;
+}
+
+.footNav {
+	height: 20px;
+	width: 240px;
+	margin-top: 74px;
+	margin-left: 160px;
+	margin-bottom: 91px;
+}
+
+.footNavList {
+	height: 20px;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	font: 14px Roboto, sans-serif;
+}
+
+.footNavList>li+li {
+	line-height: 20px;
+	margin-left: 18px;
+	/* border-left: 1px solid #4e4e4e; */
+}
+
+.footNavList>li+li::before {
+	content: "|";
+	font-size: 10px;
+	color: #4e4e4e;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+
+.footNavList>li>a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer>.logo {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	margin-left: 378px;
+}
+
+.footPar {
+	height: 20px;
+	width: 170px;
+	margin-top: 74px;
+	margin-left: 433px;
+	margin-bottom: 91px;
+	color: #818181;
+	font: 14px Roboto, sans-serif;
+	line-height: 20px;
 }

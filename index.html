@@ -27,14 +27,13 @@
 					<li><a class="navLink" href="#faq">FAQ</a></li>
 				</ul>
 			</nav>
-		</header>
-
-		<main class="main">
 			<section class="yourLife">
 				<h1>your life is webdev</h1>
 				<p class="yourLifeText">Whatever the approach to development may be, the final<br>
 					program must satisfy some fundamental properties</p>
-				<div class="headButton"><a  href="#getStarted">get started</a></div>
+				<form class="headForm" action="">
+					<button class="headButton">get started</button>				
+				</form>
 				<ul class="socNetIcon">
 					<li><a class="icon" href="#mail"><img class="icon" src="assets/img/mail.png" alt=""></a></li>
 					<li><a class="icon" href="#facebook"><img class="icon" src="assets/img/facebook.png" alt=""></a></li>
@@ -42,12 +41,17 @@
 					<li><a class="icon" href="#youtube"><img class="icon" src="assets/img/youtube.png" alt=""></a></li>
 				</ul>
 			</section>
+		</header>
+
+		<main class="main">
 			<section class="rappresent">
 				<a id="getStarted" class="hidden">.</a>
 				<div class="rappresentCard">
 					<h2>Rappresent your idea with a smart design</h2>
-					<p class="rappresentText">Tasks accompanying and related to programming include: testing, debugging, source code maintenance, implementation of build systems, and management of derived artifacts, such as the machine code of computer programs.</p>
-					<div class="rappresentButton"><a  href="#getStarted">get started</a></div>
+					<p class="rappresentText">Tasks accompanying and related to programming include: testing, debugging, source code maintenance, <strong>implementation of build systems</strong>, and management of derived artifacts, such as the machine code of computer programs.</p>
+					<form class="rappresentForm" action="">
+						<button class="rappresentButton">get started</button>				
+					</form>
 				</div>
 				<div class="rappresentCard">
 					<img class="rappresentImage" src="assets/img/rappresent.png" alt="rappresent image">
@@ -79,8 +83,58 @@
 					</div>
 				</div>
 			</section>
+			<section class="implement">
+				<a id="learnmore" class="hidden">.</a>
+				<img class="implementImage" src="assets/img/implement.png" alt="implement image">
+				<div class="implementCard">
+					<h2>Implement right code</h2>
+					<p class="implementText">These might be considered part of the <strong>programming process</strong>, but often the term software development is used for this larger process with the term programming, implementation</p>
+					<form class="implementForm" action="">
+						<button class="implementButton">Learn more</button>				
+					</form>
+				</div>
+			</section>
+			<section class="signUp">
+				<h2>Sign up for our newsletter</h2>
+				<form class="signUpForm" action="">
+					<input class="signUpEmail" type="email" placeholder="E-mail">
+					<button class="signUpCheck" type="submit">
+						<img src="/assets/img/check.png" alt="sign up button"> 
+					</button>				
+				</form> 
+			</section>
+			<section class="download">
+				<h2>Download the app</h2>
+				<p class="downloadText">Machine code was the language of early programs, written in the instruction<br>set of the particular machine, often in binary notation.</p>
+				<form class="downloadForm">
+					<button class="apple">
+						<div class="appleText">Apple store</div>
+						<div class="appleCheck">
+							<img src="/assets/img/apple.png" alt="apple store">
+						</div>
+					</button>
+					<button class="android">
+						<div class="androidText">Play market</div>
+						<div class="androidCheck">							
+							<img src="/assets/img/android.png" alt="apple store">
+						</div>
+					</button>
+				</form>
+			</section>
 		</main>
-		<footer>
+		<footer class="footer">
+			<a id="credits" class="hidden">.</a>
+			<a id="privacy" class="hidden">.</a>
+			<a id="ourteams" class="hidden">.</a>
+			<nav class="footNav">
+				<ul class="footNavList">
+					<li><a href="#credits">Credits</a></li>
+					<li><a href="#privacy">Privacy</a></li>
+					<li><a href="#ourteams">Our teams</a></li>
+				</ul>
+			</nav>
+			<img class="logo" src="/assets/img/logo.png" alt="logo">
+			<p class="footPar">by TonYem for RSS at 2020</p>
 		</footer>
 	</body>
 </html>
