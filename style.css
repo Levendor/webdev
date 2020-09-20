@@ -370,7 +370,7 @@ h3 {
 
 .signUp {
 	background-size: cover;
-	background-image: url(/assets/img/signup2.png);
+	background-image: url(assets/img/signup2.png);
 }
 
 .signUp>h2 {
@@ -529,7 +529,6 @@ h3 {
 
 .footNavList>li+li {
 	margin-left: 18px;
-	/* border-left: 1px solid #4e4e4e; */
 }
 
 .footNavList>li+li::before {
